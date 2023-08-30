@@ -1,0 +1,41 @@
+class Shape{
+	int length;
+	int breadth;
+	public Shape(int i,int j) {
+		length=i;
+		breadth=j;				//--> Super Class
+	}
+	void area() {
+		System.out.println("Area of shape");
+	}
+}
+
+class Rectangle extends Shape{	 //-->takes Variable of SuperClass
+	public Rectangle(int a,int b) {
+		super(a,b);	//-->go to superclass and find constrctor
+	}						//--> Child class of shape
+	void area() {		//-> Method over riding
+		System.out.println("Area of Rectangle="+(length*breadth));
+	}
+}
+
+class Cuboid extends Shape{ 
+	int height;
+	public Cuboid(int a,int b,int c) {
+		super(a,b); 			//-> 2 variable Goes to superclass	
+		height=c;
+	}				//--> Child class of shape
+//	public void area() {		// area method overridden
+//		System.out.println("Area couboid ="+(length*breadth*height));
+//	}
+}
+public class InheritenceTest {
+	public static void main(String args[]) {
+		Rectangle r=new Rectangle(10,5);
+		r.area();
+		Shape s=new Shape(10,20);
+		s.area();
+		Cuboid c=new Cuboid(10,2,3);
+		c.area();
+	}
+}

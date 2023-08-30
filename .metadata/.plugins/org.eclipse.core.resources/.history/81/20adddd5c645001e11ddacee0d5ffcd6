@@ -1,0 +1,21 @@
+class Student10{
+	String name;
+	int roll;
+	public Student10(String name,int roll) {
+		this.name=name;
+		this.roll=roll;
+	}
+	
+	//String -> return 			toString() -> method name;
+	public String toString() {
+		return "name :"+name+"roll :"+roll;
+	}
+}
+
+public class ToStringMethod {
+	public static void main(String args[]) {
+		Student10 s = new Student10("Madhav",200);
+		System.out.println(s);
+		
+	}
+}

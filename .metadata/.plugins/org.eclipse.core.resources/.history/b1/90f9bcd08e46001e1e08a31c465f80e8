@@ -1,0 +1,27 @@
+class Shape{
+	int length;
+	int breadth;
+	void area() {
+		System.out.println("Area of shape");
+	}
+}
+
+class Rectangle extends Shape{
+	int length;
+	int breadth;
+	public Rectangle(int a,int b) {
+		length=a;
+		breadth=b;
+	}
+	void area(int l,int b) {
+		System.out.println("Area="+(l*b));
+	}
+}
+public class InheritenceTest {
+	public static void main(String args[]) {
+		Rectangle r=new Rectangle(10,5);
+		r.area();
+		Shape s=new Shape();
+		s.area();
+	}
+}

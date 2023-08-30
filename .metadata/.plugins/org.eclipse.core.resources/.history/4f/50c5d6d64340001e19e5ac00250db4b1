@@ -1,0 +1,9 @@
+// class -> Caps latter
+//       e.g ->  MyDisplay 
+// methods -> small ltr for first word, caps for the next word
+//     e.g ->  myDisplay()
+public class FirstOops {
+	public static void main(String args[]) {
+		System.out.println("Hi Everyone");
+	}
+}

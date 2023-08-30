@@ -1,0 +1,27 @@
+class Student10{
+	String name;
+	int roll;
+	public Student10(String name,int roll) {
+		this.name=name;
+		this.roll=roll;
+	}
+	//copy constructor
+	public Student10(Student10 s1) {
+		this.name=s1.name;
+		this.roll=s1.roll;
+	}
+	
+}
+
+public class ConstructCopy {
+	public static void main(String args[]) {
+		Student10 s=new Student10("Madhav",200);
+		System.out.println(s.name);
+		System.out.println(s.roll);
+		
+		Student10 s2=new Student10(s);
+		System.out.println("I am s2");
+		System.out.println(s2.name);
+		System.out.println(s2.roll);
+	}
+}

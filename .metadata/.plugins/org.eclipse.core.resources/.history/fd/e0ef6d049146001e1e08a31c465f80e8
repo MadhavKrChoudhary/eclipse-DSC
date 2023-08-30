@@ -1,0 +1,41 @@
+class Shape{
+	int length;
+	int breadth;
+	public Shape(int i,int j) {
+		length=i;
+		breadth=j;				//--> Super Class
+	}
+	void area() {
+		System.out.println("Area of shape");
+	}
+}
+
+class Rectangle extends Shape{
+	public Rectangle(int a,int b) {
+		super(a,b);
+	}						//--> Child class of shape
+	void area() {
+		System.out.println("Area of Rectangle="+(length*breadth));
+	}
+}
+
+class Cuboid extends Shape{
+	int height;
+	public Cuboid(int a,int b,int c) {
+		super(a,b); 					//--> Child class of shape
+		height=c;
+	}
+	public void area() {
+		System.out.println("Area couboid ="+(length*breadth*height));
+	}
+}
+public class InheritenceTest {
+	public static void main(String args[]) {
+		Rectangle r=new Rectangle(10,5);
+		r.area();
+		Shape s=new Shape(10,20);
+		s.area();
+		Cuboid c=new Cuboid(10,2,3);
+		c.area();
+	}
+}

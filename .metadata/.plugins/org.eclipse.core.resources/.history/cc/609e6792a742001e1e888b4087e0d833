@@ -1,0 +1,10 @@
+
+public class DatatypesConcept {
+	public static void main(String args[]) {
+		int a=10;
+		float b=3;
+		int c;
+		c=(int)(a/b);
+		System.out.println(c);
+	}
+}

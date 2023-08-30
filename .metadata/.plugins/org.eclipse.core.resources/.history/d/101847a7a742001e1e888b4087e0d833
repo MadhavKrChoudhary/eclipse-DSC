@@ -1,0 +1,21 @@
+
+// datatype arrayname[] = new datatype[n];
+// datatype []arrayname=new datatype[n];
+
+import java.util.*;
+public class DatatypesConcept {
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		int arr[]=new int[5];
+		
+		for(int i=0;i<5;i++) {
+			System.out.println("Enter the value");
+			arr[i]=sc.nextInt();
+		}
+		
+		for(int i=0;i<5;i++) {
+			System.out.print(arr[i]+"\t");
+		}
+		
+	}
+}

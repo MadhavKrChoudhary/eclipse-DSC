@@ -1,0 +1,30 @@
+class Teacher{
+	String name;
+	double salary;
+	public Teacher(String n,double s) {
+		name=n;
+		salary=s;
+	}
+	public void TDisplay() {
+		System.out.println("Hi I am Teacher "+name);
+	}
+}
+
+class Proctor extends Teacher{
+	int extra;
+	public Proctor(String n,double s,int e) {
+		super(n,s);
+		extra=e;
+	}
+	public void PDisplay() {
+		System.out.println("Hi I m proctor"+name);
+	}
+}
+public class DynamicMethodDisp {
+	public static void main(String args[]) {
+		Teacher t=new Teacher("Madhav",20000000);
+		t.TDisplay();
+		Proctor p=new Proctor("Shubham",1000000,5000);
+		p.PDisplay();
+	}
+}
